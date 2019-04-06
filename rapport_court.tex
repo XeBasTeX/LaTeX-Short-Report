@@ -1,0 +1,104 @@
+\documentclass[10pt,a4paper,french]{scrartcl}
+
+
+%Reconnaissance des lettre du clavier
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[frenchb]{babel}
+\usepackage[a4paper]{geometry}
+
+
+\usepackage[pdftex,
+            pdfauthor={Bastien Laville},
+            pdftitle={Rapport},
+            pdfsubject={Sujet},
+            pdfkeywords={Rapport de, Centrale Lyon, Bastien Laville},
+            pdfproducer={Latex with hyperref, or other system},
+            pdfcreator={TexShop}]{hyperref}
+
+
+\usepackage{fourier}
+\usepackage{fancyhdr}	%des titres fouqu�s
+\usepackage{lipsum}		%Mettre du texte lipsum en maquette
+				% English language/hyphenation
+\usepackage[protrusion=true,expansion=true]{microtype}	
+\usepackage{amsmath,amsfonts,amsthm} % Math packages
+\usepackage[pdftex]{graphicx}	
+\usepackage{url}
+\usepackage{xcolor}
+
+
+%%% Custom sectioning
+\usepackage{sectsty}
+\allsectionsfont{\centering \normalfont\scshape}
+
+
+%%% Custom headers/footers (fancyhdr package)
+\usepackage{fancyhdr}
+\pagestyle{fancyplain}
+\fancyhead{}											% No page header
+\fancyfoot[L]{}											% Empty 
+\fancyfoot[C]{}											% Empty
+\fancyfoot[R]{\thepage}									% Pagenumbering
+\renewcommand{\headrulewidth}{0pt}			% Remove header underlines
+\renewcommand{\footrulewidth}{0pt}				% Remove footer underlines
+\setlength{\headheight}{13.6pt}
+
+
+%%% Equation and float numbering
+\numberwithin{equation}{section}		% Equationnumbering: section.eq#
+\numberwithin{figure}{section}			% Figurenumbering: section.fig#
+\numberwithin{table}{section}				% Tablenumbering: section.tab#
+
+
+%%% Maketitle metadata
+\newcommand{\horrule}[1]{\rule{\linewidth}{#1}} 	% Horizontal rule
+
+\title{
+		\vspace{-1.2in} 	
+		\usefont{OT1}{bch}{b}{n}
+		\normalfont \normalsize \textsc{École centrale de Lyon} \\ [25pt]
+		\horrule{0.5pt} \\[0.1cm]
+		\huge Rapport de \\
+		\horrule{2pt} \\[0.2cm]
+}
+\author{
+		\normalfont 								\normalsize
+        \textsc{Bastien Laville} (promotion entrante 2017)\\[-3pt]		\normalsize
+        \today
+}
+\date{}
+
+
+%%%% STYLE %%%%
+
+\topmargin=0in
+\evensidemargin=0in
+\oddsidemargin=0in
+\textwidth=6.5in
+\textheight=9.0in
+\headsep=0.3in %0.25
+\evensidemargin=0in
+\oddsidemargin=-0.15in
+\textwidth=6.5in
+\textheight=9.0in
+\headsep=0.3in %0.25
+
+%\definecolor{CentraleRed}{rgb}{0.558,0.09, 0.18}%personal color
+%\definecolor{CentraleGray}{rgb}{0.67,0.67, 0.67}%personal color
+%\definecolor{CentraleGrayEq}{RGB}{66,66,66}%personal color
+%
+%\sectionfont{\centering \color{CentraleRed}}  % sets colour of sections
+%\subsectionfont{\centering \color{CentraleRed}}  % sets colour of sections
+
+
+
+%%% Begin document %%%
+\begin{document}
+\maketitle
+\section{Ma section}
+
+
+
+%%% End document
+\end{document}
